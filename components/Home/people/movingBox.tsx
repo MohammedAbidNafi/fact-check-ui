@@ -13,7 +13,7 @@ export function MovingBox() {
   useEffect(() => {
     const getFacts = async () => {
       try {
-        const facts = await fetch("http://localhost:8080/facts");
+        const facts = await fetch("http://localhost:1234/facts");
 
         const factsData: Fact[] = await facts.json();
 
